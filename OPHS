@@ -1,0 +1,46 @@
+def onePlayer():
+    print("Ready To Start")
+
+def twoPlayer():
+    print("Ready To Start")
+
+def online():
+    print("Ready To Start")
+
+def deathmatch():
+    print("Ready To Start")
+    
+    
+def main(): 
+    loopAgain = True
+    while loopAgain == True:
+
+        print("Welcome to Super Mario")
+        print("1)1-player")
+        print("2)2-player")
+        print("3)Online")
+        print("4)Deathmatch")
+        print("5)Exit") 
+
+        choice = int(input("Pick Option 1,2,3,4,5"))
+
+        if choice == 1:
+            print("1-player starting")
+            onePlayer()
+        elif choice == 2:
+            print("2-player starting")
+            twoPlayer()
+        elif choice == 3:
+            print(" Online starting")
+            online()
+        elif choice == 4:
+            print("Deathmatch Starting")
+            deathmatch()
+        elif choice == 5:
+            print("Exiting...")
+            loopAgain = False
+        else:
+            print("Invalide choice,Please Try Again")
+main()
+
+print("bye!")
